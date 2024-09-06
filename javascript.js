@@ -57,30 +57,30 @@ $(document).ready(function() {
     });
 });
 //backtop
-const checkEmail = document.querySelector("#email");
-const notificationEmail = document.querySelector("#notification");
-const checkName = document.querySelector("#name");
-const notificationName = document.querySelector("#notification-name");
-function validateEmail() {
-    if (checkEmail.value == "") {
-        notificationEmail.innerHTML = "Please enter your email!";
-        notificationEmail.style.display = "block";
-    } else if (checkEmail.value.indexOf("@") == -1) {
-        notificationEmail.innerHTML = "Invalid email address!";
-        notificationEmail.style.display = "block";
-    } else {
-        notificationEmail.style.display = "none";
-    }
-}
-function validateName() {
-    if (checkName.value == "") {
-        notificationName.innerHTML = "Please enter your name!";
-    } else {
-        notificationName.style.display = "none";
-    }
-}
-checkEmail.addEventListener("mouseup ", validateEmail);
-checkName.addEventListener("mouseup ", validateName);
+// const checkEmail = document.querySelector("#email");
+// const notificationEmail = document.querySelector("#notification");
+// const checkName = document.querySelector("#name");
+// const notificationName = document.querySelector("#notification-name");
+// function validateEmail() {
+//     if (checkEmail.value == "") {
+//         notificationEmail.innerHTML = "Please enter your email!";
+//         notificationEmail.style.display = "block";
+//     } else if (checkEmail.value.indexOf("@") == -1) {
+//         notificationEmail.innerHTML = "Invalid email address!";
+//         notificationEmail.style.display = "block";
+//     } else {
+//         notificationEmail.style.display = "none";
+//     }
+// }
+// function validateName() {
+//     if (checkName.value == "") {
+//         notificationName.innerHTML = "Please enter your name!";
+//     } else {
+//         notificationName.style.display = "none";
+//     }
+// }
+// checkEmail.addEventListener("change ", validateEmail);
+// checkName.addEventListener("change ", validateName);
 function showMessage() {
     alert("Product added to cart successfully!");
 }
